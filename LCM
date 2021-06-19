@@ -1,0 +1,17 @@
+# Python program to find LCM of two numbers
+ 
+# Recursive function to return gcd of x and y
+def gcd(x,y):
+    if x == 0:
+        return y
+    return gcd(y % x, x)
+ 
+# Function to return LCM of two numbers
+def lcm(x,y):
+    return (x / gcd(x,y))* y
+ 
+# Driver program to test above function
+x = 15
+y = 20
+print('LCM of', x, 'and', y, 'is', lcm(a, b))
+ 
